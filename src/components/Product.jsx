@@ -1,8 +1,11 @@
-export function Product() {
+import "./Product.css";
+
+export function Product({ name, desc, price }) {
   return (
-    <div>
-      <h2>Produkt</h2>
-      <p>Popis produktu</p>
+    <div className="product">
+      <h2>{name}</h2>
+      <p>{desc}</p>
+      <p>{price} EUR</p>
     </div>
   );
 }
